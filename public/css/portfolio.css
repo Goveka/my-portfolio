@@ -1,0 +1,667 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  display: grid;
+  text-align: center;
+  color: white;
+  width: 100%;
+  background-color: #874391;
+  border: 5px solid #874391;
+}
+
+body{
+  background-color: #0B2446;
+}
+
+img{
+  max-width: 100%;
+}
+
+.selfDiscription{
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
+width: 50%;
+height: 300px;
+box-sizing: border-box;
+transition-duration: 3s;
+background-color: #0B2129;
+margin-top: 5%;
+}
+
+.selfDiscription > p{
+  font-weight: bolder;
+  color: white;
+}
+.selfDiscription > p >strong{
+  color: #874391;
+}
+
+.selfDiscription > p > img {
+  float: left;
+  max-width: 30%;
+  height: auto;
+  margin: 0px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
+  margin: 2%;
+}
+ #secondP{
+   position: relative;
+   margin-top: 7%;
+ }
+
+.certificteDisplay{
+width: 25%;
+height: 500px;
+overflow: auto;
+border: 5px solid #0B2129;
+background-color: #0B2129;
+position: absolute;
+left: 76%;
+top: 13%;
+color: #874391;
+display: grid;
+gap: 2em;
+}
+
+.certificteDisplay >p{
+  color: white;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.contact-details{
+  border: 5px dashed #874391;
+  background-color: #874391;
+  width: 70%;
+  margin-top: 2%;
+  margin-left: 2%;
+  display: flex;
+  gap: 15px;
+}
+
+.contact-details > h2{
+  color: white;
+  font-weight: bolder;
+}
+
+.contact-details > i{
+  color: white;
+}
+
+.second-header{
+  margin-top: 8%;
+  display: grid;
+  text-align: center;
+  width: 100%;
+  background-color: purple;
+  animation-name: highliter;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes highliter {
+
+0%{
+  color: #874391;
+}
+
+6.25% {
+  color: silver;
+}
+
+12.50% {
+  color: gray;
+}
+
+18.75% {
+  color: black;
+}
+
+25%{
+  color: red;
+}
+31.25%{
+  color: maroon;
+}
+
+37.50%{
+  color: yellow;
+}
+
+43.75%{
+  color: olive;
+}
+
+50%{
+  color: lime;
+}
+
+56.25%{
+  color: green;
+}
+
+62.50%{
+  color: aqua;
+}
+
+68.75%{
+  color: teal;
+}
+
+75%{
+  color: blue;
+}
+
+81.25%{
+  color: navy;
+}
+
+87.50%{
+  color: fuchsia;
+}
+
+100%{
+  color: purple;
+}
+
+}
+.projects{
+  display: flex;
+  gap: 5em;
+  margin-top: 5%;
+}
+
+.project{
+  width: 380px;
+  background-color: black;
+  color: white;
+}
+
+.project > h2{
+  margin: 5%;
+  background-color: #0B2129;
+}
+
+.project > p{
+  margin-top: 5%;
+  font-weight: bolder;
+}
+
+.project > p > strong{
+  color: purple;
+}
+
+.project > img{
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
+}
+
+.project > a{
+  display: grid;
+  margin-top: 6%;
+  color: white;
+  text-align: center;
+}
+
+a:link{
+  text-decoration: none;
+  background-color: #0B2129;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.project > a:hover{
+  display: grid;
+  margin-top: 6%;
+  color: purple;
+  text-align: center;
+}
+footer{
+  border: 2px solid #3E3E3E;
+  background-color: #3E3E3E;
+  height: 100px;
+  text-align: center;
+  padding: 50px;
+  color: white;
+  margin-top: 10%;
+}
+.footer > i{
+  background-color: transparent;
+  color: black;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+
+  .selfDiscription{
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
+  width: 100%;
+  position: relative;
+  height: auto;
+  transition-duration: 3s;
+  background-color: #0B2129;
+  margin-top: 5%;
+  }
+
+  .selfDiscription > p{
+    font-weight: bolder;
+    color: white;
+  }
+  .selfDiscription > p >strong{
+    color: #874391;
+  }
+
+  .selfDiscription > p > img {
+    float: left;
+    max-width: 40%;
+    height: auto;
+    margin: 0px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
+    margin: 2%;
+  }
+   #secondP{
+     position: relative;
+     margin-top: 7%;
+   }
+
+  .certificteDisplay{
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+  border: 5px solid #0B2129;
+  background-color: #0B2129;
+  position: relative;
+  left: 0%;
+  margin-top: 10%;
+  color: #874391;
+  display: grid;
+  gap: 2em;
+  }
+
+  .certificteDisplay >p{
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+
+  .contact-details{
+    border: 5px dashed #874391;
+    background-color: #874391;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 2%;
+    display: grid;
+    justify-content: space-between;
+  }
+
+  .contact-details > h2{
+    color: white;
+    font-weight: bolder;
+  }
+
+  .contact-details > i{
+    color: white;
+  }
+
+  .second-header{
+    margin-top: 8%;
+    display: grid;
+    text-align: center;
+    width: 100%;
+    background-color: purple;
+    animation-name: highliter;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+  }
+  @keyframes highliter {
+
+  0%{
+    color: #874391;
+  }
+
+  6.25% {
+    color: silver;
+  }
+
+  12.50% {
+    color: gray;
+  }
+
+  18.75% {
+    color: black;
+  }
+
+  25%{
+    color: red;
+  }
+  31.25%{
+    color: maroon;
+  }
+
+  37.50%{
+    color: yellow;
+  }
+
+  43.75%{
+    color: olive;
+  }
+
+  50%{
+    color: lime;
+  }
+
+  56.25%{
+    color: green;
+  }
+
+  62.50%{
+    color: aqua;
+  }
+
+  68.75%{
+    color: teal;
+  }
+
+  75%{
+    color: blue;
+  }
+
+  81.25%{
+    color: navy;
+  }
+
+  87.50%{
+    color: fuchsia;
+  }
+
+  100%{
+    color: purple;
+  }
+
+  }
+  .projects{
+    display: flex;
+    gap: 5em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .project{
+    width: 380px;
+    background-color: black;
+    color: white;
+  }
+
+  .project > h2{
+    margin: 5%;
+    background-color: #0B2129;
+  }
+
+  .project > p{
+    margin-top: 5%;
+    font-weight: bolder;
+  }
+
+  .project > p > strong{
+    color: purple;
+  }
+
+  .project > img{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
+  }
+
+  .project > a{
+    display: grid;
+    margin-top: 6%;
+    color: white;
+    text-align: center;
+  }
+
+  a:link{
+    text-decoration: none;
+    background-color: #0B2129;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  .project > a:hover{
+    display: grid;
+    margin-top: 6%;
+    color: purple;
+    text-align: center;
+  }
+  footer{
+    border: 2px solid #3E3E3E;
+    background-color: #3E3E3E;
+    height: 100px;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    margin-top: 10%;
+  }
+  .footer > i{
+    background-color: transparent;
+    color: black;
+  }
+
+}
+
+@media only screen and (min-width:481px) and (max-width:1118px) {
+
+  .selfDiscription{
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
+  width: 100%;
+  position: relative;
+  height: 500px;
+  transition-duration: 3s;
+  background-color: #0B2129;
+  margin-top: 5%;
+  }
+
+  .selfDiscription > p{
+    font-weight: bolder;
+    color: white;
+  }
+  .selfDiscription > p >strong{
+    color: #874391;
+  }
+
+  .selfDiscription > p > img {
+    float: left;
+    max-width: 40%;
+    height: auto;
+    margin: 0px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
+    margin: 2%;
+  }
+   #secondP{
+     position: relative;
+     margin-top: 7%;
+   }
+
+  .certificteDisplay{
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+  border: 5px solid #0B2129;
+  background-color: #0B2129;
+  position: relative;
+  left: 0%;
+  margin-top: 10%;
+  color: #874391;
+  display: grid;
+  gap: 2em;
+  }
+
+  .certificteDisplay >p{
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+
+  .contact-details{
+    border: 5px dashed #874391;
+    background-color: #874391;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 2%;
+    display: grid;
+    justify-content: space-between;
+  }
+
+  .contact-details > h2{
+    color: white;
+    font-weight: bolder;
+  }
+
+  .contact-details > i{
+    color: white;
+  }
+
+  .second-header{
+    margin-top: 8%;
+    display: grid;
+    text-align: center;
+    width: 100%;
+    background-color: purple;
+    animation-name: highliter;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+  }
+  @keyframes highliter {
+
+  0%{
+    color: #874391;
+  }
+
+  6.25% {
+    color: silver;
+  }
+
+  12.50% {
+    color: gray;
+  }
+
+  18.75% {
+    color: black;
+  }
+
+  25%{
+    color: red;
+  }
+  31.25%{
+    color: maroon;
+  }
+
+  37.50%{
+    color: yellow;
+  }
+
+  43.75%{
+    color: olive;
+  }
+
+  50%{
+    color: lime;
+  }
+
+  56.25%{
+    color: green;
+  }
+
+  62.50%{
+    color: aqua;
+  }
+
+  68.75%{
+    color: teal;
+  }
+
+  75%{
+    color: blue;
+  }
+
+  81.25%{
+    color: navy;
+  }
+
+  87.50%{
+    color: fuchsia;
+  }
+
+  100%{
+    color: purple;
+  }
+
+  }
+  .projects{
+    display: flex;
+    gap: 5em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .project{
+    width: 380px;
+    background-color: black;
+    color: white;
+    width: 100%;
+  }
+
+  .project > h2{
+    margin: 5%;
+    background-color: #0B2129;
+  }
+
+  .project > p{
+    margin-top: 5%;
+    font-weight: bolder;
+  }
+
+  .project > p > strong{
+    color: purple;
+  }
+
+  .project > img{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
+  }
+
+  .project > a{
+    display: grid;
+    margin-top: 6%;
+    color: white;
+    text-align: center;
+  }
+
+  a:link{
+    text-decoration: none;
+    background-color: #0B2129;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  .project > a:hover{
+    display: grid;
+    margin-top: 6%;
+    color: purple;
+    text-align: center;
+  }
+  footer{
+    border: 2px solid #3E3E3E;
+    background-color: #3E3E3E;
+    height: 100px;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    margin-top: 10%;
+  }
+  .footer > i{
+    background-color: transparent;
+    color: black;
+  }
+}
