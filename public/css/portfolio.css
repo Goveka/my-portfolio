@@ -170,6 +170,7 @@ gap: 2em;
 }
 .projects{
   display: flex;
+  flex-wrap: wrap;
   gap: 5em;
   margin-top: 5%;
 }
@@ -384,7 +385,7 @@ footer{
   }
   .projects{
     display: flex;
-    gap: 5em;
+    gap: 10em;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5%;
@@ -601,7 +602,7 @@ footer{
   }
   .projects{
     display: flex;
-    gap: 5em;
+    gap: 10em;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5%;
