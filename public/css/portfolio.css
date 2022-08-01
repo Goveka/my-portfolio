@@ -12,6 +12,10 @@ header{
   border: 5px solid #874391;
 }
 
+strong{
+  color: purple;
+}
+
 body{
   background-color: #0B2446;
 }
@@ -20,14 +24,19 @@ img{
   max-width: 100%;
 }
 
+p{
+  font-size: 1.5rem;
+}
+
 .selfDiscription{
 box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
 width: 50%;
-height: 300px;
+height: auto;
 box-sizing: border-box;
 transition-duration: 3s;
 background-color: #0B2129;
 margin-top: 5%;
+margin-left: 4%;
 }
 
 .selfDiscription > p{
@@ -49,6 +58,7 @@ margin-top: 5%;
  #secondP{
    position: relative;
    margin-top: 7%;
+   margin-bottom: 7%;
  }
 
 .certificteDisplay{
@@ -75,7 +85,7 @@ gap: 2em;
 .contact-details{
   border: 5px dashed #874391;
   background-color: #874391;
-  width: 70%;
+  width: 0 auto;
   margin-top: 2%;
   margin-left: 2%;
   display: flex;
@@ -168,6 +178,21 @@ gap: 2em;
 }
 
 }
+
+githubRef{
+  font-size: 1.9rem;
+  font-weight: 1900;
+}
+
+#githubRef > a{
+background-color: rgba(0, 255, 0, 0.2);
+}
+
+#githubRef > strong{
+margin-top: 25%;
+margin-left: 15%;
+}
+
 .projects{
   display: flex;
   flex-wrap: wrap;
@@ -179,6 +204,8 @@ gap: 2em;
   width: 380px;
   background-color: black;
   color: white;
+  box-shadow: 0 15px 30px rgba(0, 255, 0, 0.2), 0 11px 8px rgba(0,0,0,0.22);
+  overflow-wrap: break-word;
 }
 
 .project > h2{
@@ -189,6 +216,7 @@ gap: 2em;
 .project > p{
   margin-top: 5%;
   font-weight: bolder;
+  font-size: 1.5rem;
 }
 
 .project > p > strong{
