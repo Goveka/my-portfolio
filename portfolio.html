@@ -6,10 +6,11 @@
     <title>My portfolio site</title>
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="icon" type="image/svg" href="./images/myself.svg">
   </head>
   <body>
     <header>
-      <h1>WELCOME TO MY PORTFOLIO SITE</h1>
+      <h1>WELCOME TO MY PORTFOLIO SITE  <i class="fas fa-hands-helping"></i> </h1>
     </header>
 
     <main>
@@ -49,6 +50,17 @@
         <i class="fas fa-map-marker fa-3x"></i><h1>Location</h1> <p>vrede fs, 9835 SA</p>
         <i class="fas fa-envelope fa-3x"></i><h1>Email</h1> <p>sizwenkala80@gmail.com</p>
       </div>
+      <div id="messageSubmit">
+        <h1>you can send a message to me by filling up this form <i class=""></i> </h1>
+        <form action="https://formsubmit.co/sizwenkala80@gmail.com" method="post">
+         <input type="hidden" value="forms submited from my portfolio" name="origin" />
+         <label for="name">Name & surname</label><input type="text" placeholder="your names..."  name="name" id="name" required="true" />
+         <label for="email">Email adress</label><input type="email" name="email adress" placeholder="email adress..." id="email" required="true"/>
+         <label for="message">Reason</label><textarea name="message" rows="3" cols="80" required="true"></textarea>
+         <button type="submit" id="submitBtn">submit</button>
+        </form>
+      </div>
+
       <div class="second-header">
         <h1>MY JAVASCRIPT PROJECTS</h1>
       </div>
@@ -68,7 +80,7 @@
             the friend identified. I used  <strong>HTML,CSS,JAVASCRIPT AND NODE.JS</strong> TO complete
             the project.
           </p>
-          <a href="https://github.com/Goveka/mzizi-project"> click here to view source code</a><br><br>
+          <a href="https://github.com/Goveka/mzizi-project"> click here to view source code <i class="fas fa-code"></i> </a><br><br>
           <a href="https://mziziproject.herokuapp.com">click here to view the project</a>
         </div>
 
@@ -80,6 +92,7 @@
             by creating this blog site with an e-commerce in it. <strong>This project was
             an improvement from my first ever project(mentioned)</strong>as i gained more expriance
           </p>
+          <br>
           <p>
             <strong>THE OBJECTIVE</strong> OF site is to create a blog that advices
             peaople on how to take care of their health
@@ -87,7 +100,7 @@
             THE ejs template engine was used to dynamically add different products to
             the shop
           </p>
-          <a href="https://github.com/Goveka/topHolistic">click here to view source code</a><br><br>
+          <a href="https://github.com/Goveka/topHolistic">click here to view source code <i class="fas fa-code"></i> </a><br><br>
           <a href="https://top-holistic.herokuapp.com">click here to view the project</a>
         </div>
         <div class="project">
@@ -104,7 +117,7 @@
             <strong>THE OBJECTIVE</strong> FOR this site was to connect myself with
             friends and family via platform i created with the skills i've gained.
           </p>
-          <a href="https://github.com/Goveka/chatapp"> click here to view source code</a><br><br>
+          <a href="https://github.com/Goveka/chatapp"> click here to view source code  <i class="fas fa-code"></i> </a><br><br>
           <a href="https://chatsizwe.herokuapp.com"> click here to view the source app</a>
         </div>
         <div class="project">
@@ -117,9 +130,9 @@
             api to fetch the movie data from the <strong>IMBD database</strong>
             and displays those movies to the user. I used <strong>REACT.JS</strong>
             to build the site.
-            <a href="https://github.com/Goveka/movie-api">click here to view source code</a>
-            <a href="https://subtle-fenglisu-800cfa.netlify.app/">click here to view the site</a>
           </p>
+          <a href="https://github.com/Goveka/movie-api">click here to view source code  <i class="fas fa-code"></i></a><br><br>
+          <a href="https://subtle-fenglisu-800cfa.netlify.app/">click here to view the site</a>
         </div>
 
         <div class="project">
@@ -129,17 +142,17 @@
             <strong>USER AUTHENTICATION</strong> is one of the fundamental operations
             in <strong>Web development</strong>, having some knowlegde in such an
             important operation is a skill i must have. I used <strong>HTML,CSS,JAVASCRIP,NODE.JS AND MONGODB</strong>
-            <a href="https://github.com/Goveka/user-authentication">source code</a>
-            <a href="https://sizwe-user-authentication.herokuapp.com"> click here to view the app</a>
           </p>
+          <a href="https://github.com/Goveka/user-authentication">source code <i class="fas fa-code"></i></a>
+          <a href="https://sizwe-user-authentication.herokuapp.com"> click here to view the app</a>
         </div>
 
         <div class="project" id="githubRef">
           <h2>GITHUB ACCOUNT</h2>
           <p>I have completed many more projects but due to hosting problems i can't
-          SHOWCASE them all in this portfolio</p>
-          <a href="https://github.com/"> you can view my github profile from here</a>
-          <a href="SizwenkalaResume.pdf" download> Download my resume instead</a>
+          SHOWCASE them all in this portfolio</p><br>
+          <a href="https://github.com/"> you can view my github profile from here <i class="fas fa-github"></i> </a>
+          <a href="SizwenkalaResume.pdf" download> Download my resume instead  <i class="fas fa-download"></i></a><br><br>
           <strong>OTHER PROJECTS COMMING SOON</strong>
         </div>
       </div>
@@ -147,5 +160,6 @@
     <footer>
       <h2 class="footer">copyright<i class="fas fa-copyright"></i> 2022 portfolio-site| developed by sizwe</h2>
     </footer>
+    <script src="porfolio.js"></script>
   </body>
 </html>

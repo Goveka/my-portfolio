@@ -260,6 +260,65 @@ footer{
   color: black;
 }
 
+#messageSubmit{
+  background-color: white;
+  border-radius: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 25em;
+}
+#messageSubmit > h1 {
+color: #0B2446;
+font-size: 2.1rem;
+}
+
+#messageSubmit > form{
+  background-color: #0B2129;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#messageSubmit > form > label{
+  background-color: purple;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: white;
+}
+
+#messageSubmit > form > input{
+  width: 100%;
+  height: 40px;
+  margin: 1%;
+  border-radius: 5em;
+  display: flex;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+#messageSubmit > form > textarea{
+  width: 95%;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+#messageSubmit > form > button{
+  background-color: purple;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  width: 100%;
+  margin-top: 2%;
+}
+
+#messageSubmit > form > button:hover{
+  background-color: aquamarine;
+}
+
 @media only screen and (min-width:320px) and (max-width:480px) {
 
 
@@ -271,6 +330,7 @@ footer{
   transition-duration: 3s;
   background-color: #0B2129;
   margin-top: 5%;
+  margin-left: 0%;
   }
 
   .selfDiscription > p{
@@ -420,7 +480,7 @@ footer{
   }
 
   .project{
-    width: 380px;
+    width: 100%;
     background-color: black;
     color: white;
   }
