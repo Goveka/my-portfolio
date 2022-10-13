@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 header{
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22) ;
   display: grid;
   text-align: center;
   color: white;
   width: 100%;
-  background-color: #874391;
-  border: 5px solid #874391;
+  background-color: rgb(61, 122, 59);
+  border: 5px solid rgb(61, 122, 59);
 }
 
 strong{
@@ -17,7 +18,7 @@ strong{
 }
 
 body{
-  background-color: #0B2446;
+  background-color: #bcd4f5;
 }
 
 img{
@@ -34,20 +35,19 @@ h3{
 }
 
 .selfDiscription{
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
-width: 50%;
+width: 90%;
 height: auto;
 box-sizing: border-box;
 transition-duration: 3s;
-background-color: rgb(61, 122, 59);
-margin-top: 5%;
-margin-left: 4%;
+background-color: #bcd4f5;
+margin-top: 3%;
+margin-left: 6%;
 padding: 5%;
+border-bottom: double;
 }
 
 .selfDiscription > p{
   font-weight: bolder;
-  color: white;
 }
 .selfDiscription > p >strong{
   color: black;
@@ -67,30 +67,7 @@ padding: 5%;
    margin-bottom: 7%;
  }
 
-.certificteDisplay{
-width: 35%;
-height: 1000px;
-overflow: auto;
-border: 5px solid #0B2129;
-background-color: #0B2129;
-position: absolute;
-left: 60%;
-top: 20%;
-color: #874391;
-display: grid;
-gap: 2em;
-}
-
-.certificteDisplay >p{
-  color: white;
-  font-style: italic;
-  font-weight: bolder;
-  font-size: 1.2rem;
-}
-
 .contact-details{
-  border: 5px dashed #874391;
-  background-color: #874391;
   width: 0 auto;
   margin-top: 2%;
   margin-left: 2%;
@@ -99,8 +76,9 @@ gap: 2em;
 }
 
 .contact-details > h2{
-  color: white;
+  color: black;
   font-weight: bolder;
+  font-size: 1.6rem;
 }
 
 .contact-details > i{
@@ -108,13 +86,13 @@ gap: 2em;
 }
 
 .second-header{
-  margin-top: 8%;
+  margin-top: 1%;
+  margin-left: 25%;
   display: grid;
   text-align: center;
-  width: 100%;
+  width: 50%;
   color: black;
   font-weight: bolder;
-  background-color: purple;
 }
 
 
@@ -122,7 +100,7 @@ gap: 2em;
   display: flex;
   flex-wrap: wrap;
   gap: 5em;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .project{
@@ -248,19 +226,18 @@ font-size: 2.1rem;
 
 
   .selfDiscription{
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
   width: 100%;
   position: relative;
   height: auto;
+  background-color: #bcd4f5;
   transition-duration: 3s;
-  background-color: rgb(61, 122, 59);
   margin-top: 5%;
   margin-left: 0%;
+  border-bottom: double;
   }
 
   .selfDiscription > p{
     font-weight: bolder;
-    color: white;
   }
   .selfDiscription > p >strong{
     color: black;
@@ -279,30 +256,9 @@ font-size: 2.1rem;
      margin-top: 7%;
    }
 
-  .certificteDisplay{
-  width: 100%;
-  height: 700px;
-  overflow: auto;
-  border: 5px solid #0B2129;
-  background-color: #0B2129;
-  position: relative;
-  left: 0%;
-  margin-top: 10%;
-  color: #874391;
-  display: grid;
-  gap: 2em;
-  }
-
-  .certificteDisplay >p{
-    color: white;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 1.2rem;
-  }
+  
 
   .contact-details{
-    border: 5px dashed #874391;
-    background-color: #874391;
     width: 100%;
     margin-top: 2%;
     margin-left: 2%;
@@ -311,8 +267,8 @@ font-size: 2.1rem;
   }
 
   .contact-details > h2{
-    color: white;
     font-weight: bolder;
+    font-size: 1.6rem;
   }
 
   .contact-details > i{
@@ -323,8 +279,7 @@ font-size: 2.1rem;
     margin-top: 8%;
     display: grid;
     text-align: center;
-    width: 100%;
-    background-color: purple;
+    width: 50%;
     color: black;
     font-family: sans-serif;
     font-weight: bolder;
@@ -332,7 +287,7 @@ font-size: 2.1rem;
 
   .projects{
     display: flex;
-    gap: 20em;
+    gap: 5em;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5%;
@@ -403,18 +358,18 @@ font-size: 2.1rem;
 @media only screen and (min-width:481px) and (max-width:1118px) {
 
   .selfDiscription{
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
   width: 100%;
   position: relative;
-  height: 1000px;
+  height: auto;
   transition-duration: 3s;
-  background-color: rgb(61, 122, 59);
   margin-top: 5%;
+  margin-left: 0%;
+  border-bottom: double;
   }
 
   .selfDiscription > p{
     font-weight: bolder;
-    color: white;
+    font-size: 1.6rem;
   }
   .selfDiscription > p >strong{
     color: black;
@@ -433,30 +388,9 @@ font-size: 2.1rem;
      margin-top: 7%;
    }
 
-  .certificteDisplay{
-  width: 100%;
-  height: 400px;
-  overflow: auto;
-  border: 5px solid #0B2129;
-  background-color: #0B2129;
-  position: relative;
-  left: 0%;
-  margin-top: 10%;
-  color: #874391;
-  display: grid;
-  gap: 2em;
-  }
-
-  .certificteDisplay >p{
-    color: white;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 1.2rem;
-  }
+  
 
   .contact-details{
-    border: 5px dashed #874391;
-    background-color: #874391;
     width: 100%;
     margin-top: 2%;
     margin-left: 2%;
@@ -465,8 +399,9 @@ font-size: 2.1rem;
   }
 
   .contact-details > h2{
-    color: white;
+    color: black;
     font-weight: bolder;
+    font-size: 1.6rem;
   }
 
   .contact-details > i{
@@ -474,11 +409,11 @@ font-size: 2.1rem;
   }
 
   .second-header{
-    margin-top: 8%;
+    margin-top: 10%;
+    margin-left: 0%;
     display: grid;
     text-align: center;
     width: 100%;
-    background-color: purple;
     color: black;
     font-weight: bolder;
   }
