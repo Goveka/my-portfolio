@@ -18,7 +18,8 @@ strong{
 }
 
 body{
-  background-color: #bcd4f5;
+  background-color: #ecf1f7;
+  font-family: "Roboto" sans-serif;
 }
 
 img{
@@ -33,13 +34,28 @@ h3{
   font-weight: bolder;
   font-size: 1.6rem;
 }
+.themeBtn{
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 5em;
+}
+
+.themeBtn:hover{
+  background-color: rgb(61, 122, 59);
+}
+
+.themeBtn > i {
+  color: gold;
+}
 
 .selfDiscription{
 width: 90%;
 height: auto;
 box-sizing: border-box;
 transition-duration: 3s;
-background-color: #bcd4f5;
 margin-top: 3%;
 margin-left: 6%;
 padding: 5%;
@@ -229,7 +245,7 @@ font-size: 2.1rem;
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #bcd4f5;
+  background-color: #ecf1f7;
   transition-duration: 3s;
   margin-top: 5%;
   margin-left: 0%;

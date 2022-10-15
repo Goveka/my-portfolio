@@ -1,7 +1,2 @@
-const submitBtn=document.getElementById("submitBtn");
-
-submitBtn.addEventListener('click', e =>{
-        e.preventDefault;
-
-    })
-
+let nam= "sizwe"
+console.log(nam)
