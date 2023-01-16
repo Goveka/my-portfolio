@@ -4,13 +4,18 @@
   box-sizing: border-box;
 }
 header{
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22) ;
-  display: grid;
   text-align: center;
-  color: white;
   width: 100%;
-  background-color: rgb(61, 122, 59);
-  border: 5px solid rgb(61, 122, 59);
+  height: 40em;
+  background-image: url('cool-background.png');
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+i {
+  color: white;
 }
 
 strong{
@@ -55,7 +60,6 @@ width: 90%;
 height: auto;
 box-sizing: border-box;
 transition-duration: 3s;
-margin-top: 3%;
 margin-left: 6%;
 padding: 5%;
 border-bottom: double;
@@ -195,14 +199,13 @@ font-size: 2.1rem;
 }
 
 #messageSubmit > form{
-  background-color: #0B2129;
+  background-color: rgb(61, 122, 59);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 #messageSubmit > form > label{
-  background-color: purple;
   font-size: 1.5rem;
   font-weight: bolder;
   color: white;
@@ -213,6 +216,7 @@ font-size: 2.1rem;
   height: 40px;
   margin: 1%;
   border-radius: 5em;
+  border: 3px solid #0B2129 ;
   display: flex;
   text-align: center;
   font-weight: bolder;
@@ -225,7 +229,7 @@ font-size: 2.1rem;
 }
 
 #messageSubmit > form > button{
-  background-color: purple;
+  background-color: #0B2129;
   color: white;
   font-weight: bolder;
   font-size: 1.4rem;
