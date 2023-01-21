@@ -95,7 +95,7 @@ app.post('/viewedProject', (res,req)=>{
   const id="663cb52231c868773a7297ef6"
   View.findOne({_id: id}, (err, object)=>{
       if (err) {
-          res.sendStatus(500)
+          res.sendStatus(500);
       }else {
           object.viewedProject += 1;
           object.save(function(err, res){
