@@ -92,7 +92,7 @@ app.post('/viewedProjectCode', (res,req)=>{
 })
 
 app.post('/viewedProject', (res,req)=>{
-  const id="663cb52231c868773a7297ef6"
+  const id="63cb52231c868773a7297ef6"
   View.findOne({_id: id}, (err, object)=>{
       if (err) {
           console.log("error")
