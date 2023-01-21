@@ -1,14 +1,15 @@
 {
   "name": "my-portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body": "^5.1.0",
     "dotenv": "^14.2.0",
     "ejs": "^3.1.6",
+    "body-parser": "^1.20.1",
     "express": "^4.17.1",
+    "cors": "^2.8.5",
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.15",
     "mongoose": "^6.3.2",
@@ -23,5 +24,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goveka/my-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Goveka/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/Goveka/my-portfolio#readme",
+  "description": ""
 }
