@@ -14,16 +14,17 @@ header{
   justify-content: center;
 }
 
+
 i {
   color: white;
 }
-
 strong{
   color: black;
 }
 
 body{
   background-color: rgba(226, 222, 222, 0.884);
+  transition-duration: 5s;
 }
 
 img{
@@ -38,6 +39,51 @@ h3{
   font-weight: bolder;
   font-size: 1.6rem;
 }
+
+#arrow-down{
+  position: relative;
+  top: 30%;
+}
+
+#darkMode{
+  animation-name: theme;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 0;
+  transition-duration: 1s;
+  color: rgb(8, 6, 27);
+}
+
+@keyframes theme {
+
+  from{
+    color: rgb(8, 6, 27);
+  }
+  to{
+    color: rgb(15, 241, 166);
+  }
+  
+}
+
+#lightMode{
+  position: absolute;
+  display: none;
+  top: 0;
+  transition-duration: 5s;
+  color: gold;
+}
+
+#theme{
+  position: absolute;
+  top: 0;
+  background-color: #0B2129;
+}
+#theme:hover{
+  background-color: white;
+}
+
 .themeBtn{
   background-color: black;
   color: white;
@@ -241,7 +287,18 @@ font-size: 2.1rem;
   background-color: aquamarine;
 }
 
-@media only screen and (min-width:320px) and (max-width:480px) {
+@media only screen and (min-width:50px) and (max-width:480px) {
+
+  header{
+    text-align: center;
+    width: 100%;
+    height: 46em;
+    background-image: url('cool-background.png');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 
   .selfDiscription{
@@ -259,6 +316,11 @@ font-size: 2.1rem;
   }
   .selfDiscription > p >strong{
     color: black;
+  }
+
+  #arrow-down{
+    position: relative;
+    top: 0%;
   }
 
   .selfDiscription > p > img {
@@ -375,6 +437,17 @@ font-size: 2.1rem;
 
 @media only screen and (min-width:481px) and (max-width:1118px) {
 
+  header{
+    text-align: center;
+    width: 100%;
+    height: 46em;
+    background-image: url('cool-background.png');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .selfDiscription{
   width: 100%;
   position: relative;
@@ -415,7 +488,6 @@ font-size: 2.1rem;
     display: grid;
     justify-content: space-between;
   }
-
   .contact-details > h2{
     color: black;
     font-weight: bolder;
@@ -425,6 +497,7 @@ font-size: 2.1rem;
   .contact-details > i{
     color: white;
   }
+
 
   .second-header{
     margin-top: 10%;
@@ -501,3 +574,4 @@ font-size: 2.1rem;
     color: black;
   }
 }
+

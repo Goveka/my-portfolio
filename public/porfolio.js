@@ -41,3 +41,30 @@ const downloadedCV= document.getElementById('download-cv').addEventListener('cli
     request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     request.send(`id=${id}`) 
 })
+
+
+// changing themes
+//dark mode
+const darkMode= document.getElementById('darkMode').addEventListener('click', (e)=>{
+    document.body.style.background = 'rgb(8, 6, 27)';
+    let selfDiscription= document.getElementById('selfDiscription');
+    selfDiscription.style.color= 'rgba(219, 212, 212, 0.815)';
+    let strong=document.getElementById('strong');
+    strong.style.color = 'rgb(35, 107, 13)';
+    let contactDetails=document.getElementById('contact-details');
+    contactDetails.style.color= 'rgba(219, 212, 212, 0.815)';
+    let lightMode=document.getElementById('lightMode').style.display= 'block';
+    e.target.style.display= 'none';
+    const myProjects=document.getElementById('my-projectsText').style.color= 'white';
+})
+
+// light mode
+const lightMode=document.getElementById('lightMode').addEventListener('click', (e)=>{
+    document.body.style.background = 'white';
+    let selfDiscription= document.getElementById('selfDiscription');
+    selfDiscription.style.color= 'black';
+    let contactDetails=document.getElementById('contact-details');
+    contactDetails.style.color= 'black';
+    const darkMode= document.getElementById('darkMode').style.display= 'block';
+    e.target.style.display= 'none';
+})
