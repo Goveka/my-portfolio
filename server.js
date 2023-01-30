@@ -51,8 +51,7 @@ app.get('/',(req,res)=>{
 
 // posting to the database || updating the object in the database
 app.post('/viewedSite', (res,req)=>{
-  const id="63cae72cd6a362d3024cf6a9";
-  //const id="63cb52231c868773a7297ef6";
+  const id="63cb52231c868773a7297ef6"
   View.findOne({_id: id}, (err, object)=>{
       if (err) {
           res.sendStatus(500)
@@ -73,8 +72,7 @@ app.post('/viewedSite', (res,req)=>{
 })
 
 app.post('/viewedProjectCode', (res,req)=>{
-  const id="63cae72cd6a362d3024cf6a9";
-  //const id="63cb52231c868773a7297ef6"
+  const id="63cb52231c868773a7297ef6"
   View.findOne({_id: id}, (err, object)=>{
       if (err) {
           res.sendStatus(500)
@@ -94,11 +92,10 @@ app.post('/viewedProjectCode', (res,req)=>{
 })
 
 app.post('/viewedProject', (res,req)=>{
-  const id="63cae72cd6a362d3024cf6a9";
-  //const id="63cb52231c868773a7297ef6";
+  const id="63cb52231c868773a7297ef6"
   View.findOne({_id: id}, (err, object)=>{
       if (err) {
-          res.sendStatus(500)
+          console.log("error")
       }else {
           object.viewedProject += 1;
           object.save(function(err, res){
@@ -106,7 +103,7 @@ app.post('/viewedProject', (res,req)=>{
                   res.sendStatus(500)
                   console.error(err)
               }else {
-                  //res.sendStatus(200)
+                 // res.sendStatus(200)
                   console.log('updated viewedProject');
               }
           })
@@ -115,8 +112,7 @@ app.post('/viewedProject', (res,req)=>{
 })
 
 app.post('/viewedGITHUB', (res,req)=>{
-  const id="63cae72cd6a362d3024cf6a9";
-  //const id="63cb52231c868773a7297ef6"
+  const id="63cb52231c868773a7297ef6"
   View.findOne({_id: id}, (err, object)=>{
       if (err) {
           res.sendStatus(500)
@@ -136,8 +132,7 @@ app.post('/viewedGITHUB', (res,req)=>{
 })
 
 app.post('/downloadedCV', (res,req)=>{
-  const id="63cae72cd6a362d3024cf6a9";
-  //const id="63cb52231c868773a7297ef6"
+  const id="63cb52231c868773a7297ef6"
   View.findOne({_id: id}, (err, object)=>{
       if (err) {
           res.sendStatus(500)
