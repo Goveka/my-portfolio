@@ -1,8 +1,8 @@
-const id= "63cac530ec7d9e5bab64828c";
+const date= new Date();
 const request= new XMLHttpRequest();
 request.open('Post', '/viewedSite');
 request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-request.send(`id=${id}`)
+request.send(`date=${date}`)
 
 
 const sourceCode = document.querySelectorAll('.source-code').forEach(function(codeBtn){

@@ -13,7 +13,13 @@ header{
   flex-direction: column;
   justify-content: center;
 }
-
+header > h1{
+  font-size: 3.1rem;
+  font-family: 'Courier New', Courier, monospace;
+  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(8, 31, 5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 i {
   color: white;
@@ -25,6 +31,7 @@ strong{
 body{
   background-color: rgba(226, 222, 222, 0.884);
   transition-duration: 5s;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 img{
@@ -52,6 +59,7 @@ h3{
   animation-iteration-count: infinite;
   position: absolute;
   top: 0;
+  left: 90%;
   transition-duration: 1s;
   color: rgb(8, 6, 27);
 }
@@ -71,6 +79,7 @@ h3{
   position: absolute;
   display: none;
   top: 0;
+  left: 90%;
   transition-duration: 5s;
   color: gold;
 }
@@ -79,6 +88,7 @@ h3{
   position: absolute;
   top: 0;
   background-color: #0B2129;
+  margin: 5%;
 }
 #theme:hover{
   background-color: white;
@@ -147,6 +157,27 @@ border-bottom: double;
 }
 
 .contact-details > i{
+  color: white;
+}
+
+#contact-details {
+  width: 0 auto;
+  margin-top: 2%;
+  margin-left: 2%;
+  display: flex;
+  gap: 15px;
+  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(31, 43, 29));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+#contact-details > h2{
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+#contact-details > i{
   color: white;
 }
 
@@ -299,7 +330,26 @@ font-size: 2.1rem;
     flex-direction: column;
     justify-content: center;
   }
+  #darkMode{
+    animation-name: theme;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0;
+    left: 30%;
+    transition-duration: 1s;
+    color: rgb(8, 6, 27);
+  }
 
+  #lightMode{
+    position: relative;
+    display: none;
+    top: 0;
+    left: 30%;
+    transition-duration: 5s;
+    color: gold;
+  }
 
   .selfDiscription{
   width: 100%;
@@ -352,6 +402,23 @@ font-size: 2.1rem;
   }
 
   .contact-details > i{
+    color: white;
+  }
+
+  #contact-details{
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 2%;
+    display: grid;
+    justify-content: space-between;
+  }
+
+  #contact-details > h2{
+    font-weight: bolder;
+    font-size: 1.1rem;
+  }
+
+  #contact-details > i{
     color: white;
   }
 
@@ -448,6 +515,27 @@ font-size: 2.1rem;
     justify-content: center;
   }
 
+  #darkMode{
+    animation-name: theme;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0;
+    left: 35%;
+    transition-duration: 1s;
+    color: rgb(8, 6, 27);
+  }
+
+  #lightMode{
+    position: relative;
+    display: none;
+    top: 0;
+    left: 35%;
+    transition-duration: 5s;
+    color: gold;
+  }
+
   .selfDiscription{
   width: 100%;
   position: relative;
@@ -495,6 +583,23 @@ font-size: 2.1rem;
   }
 
   .contact-details > i{
+    color: white;
+  }
+
+  #contact-details{
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 2%;
+    display: grid;
+    justify-content: space-between;
+  }
+  #contact-details > h2{
+    color: black;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+
+  #contact-details > i{
     color: white;
   }
 
