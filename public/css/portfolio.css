@@ -323,7 +323,7 @@ font-size: 2.1rem;
   header{
     text-align: center;
     width: 100%;
-    height: 46em;
+    height: 50em;
     background-image: url('cool-background.png');
     background-repeat: repeat;
     display: flex;
