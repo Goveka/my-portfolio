@@ -5,7 +5,9 @@ const port=process.env.PORT || 4009;
 const bodyParser= require('body-parser');
 const mongoose= require('mongoose');
 const cors= require('cors');
-const url='mongodb+srv://Sizwenkala:sizwe123@cluster0.fejtt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+require('dotenv').config();
+const url= process.env.DATABASE_URL;
+
 
 
 // middleware
