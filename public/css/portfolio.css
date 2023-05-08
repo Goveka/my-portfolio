@@ -3,548 +3,151 @@
   padding: 0;
   box-sizing: border-box;
 }
-header{
-  background-color: #010102c9;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  margin: 50px;
+}
+
+#selfDiscription {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.selfDiscription img {
+  display: block;
+  margin: 0 auto;
+  max-width: 20%;
+}
+
+#strong {
+  color: #005eff;
+}
+
+#secondP {
+  margin-top: 20px;
+}
+
+.second-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#my-projectsText {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+}
+
+.project {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-}
-header > h1{
-  font-size: 3.1rem;
-  font-family: 'Courier New', Courier, monospace;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.884), rgb(235, 235, 235));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  width: calc(33.33% - 10px);
 }
 
-i {
-  color: white;
-}
-strong{
-  color: black;
-}
-
-body{
-  background-color: rgb(8, 6, 27);
-  transition-duration: 5s;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-img{
+.project img {
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
 }
 
-p{
-  font-size: 1.5rem;
+.project h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-h3{
-  font-weight: bolder;
-  font-size: 1.6rem;
+.project p {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-#theme{
-  position: absolute;
-  top: 0;
-  background-color: #0B2129;
-  margin: 5%;
-}
-#theme:hover{
-  background-color: white;
+.source-code {
+  color: #005eff;
+  margin-right: 10px;
 }
 
-.themeBtn{
-  background-color: black;
+.viewProject {
+  background-color: #005eff;
+  border-radius: 5px;
   color: white;
-  font-weight: bolder;
-  font-size: 1.2rem;
-  padding: 5px;
-  border-radius: 5em;
-}
-
-.themeBtn:hover{
-  background-color: rgb(61, 122, 59);
-}
-
-.themeBtn > i {
-  color: gold;
-}
-
-.selfDiscription{
-width: 90%;
-height: auto;
-box-sizing: border-box;
-transition-duration: 3s;
-margin-left: 6%;
-padding: 5%;
-border-bottom: double;
-color: #fff;
-}
-
-.selfDiscription > p{
-  font-weight: bolder;
-}
-.selfDiscription > p >strong{
-  color: rgb(35, 107, 13);
-}
-
-.selfDiscription > p > img {
-  float: left;
-  max-width: 30%;
-  height: auto;
-  margin: 0px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
-  margin: 2%;
-}
- #secondP{
-   position: relative;
-   margin-top: 7%;
-   margin-bottom: 7%;
- }
-
-.contact-details{
-  width: 0 auto;
-  margin-top: 2%;
-  margin-left: 2%;
-  display: flex;
-  gap: 15px;
-  color: #fff;
-}
-
-.contact-details > h2{
-  color: black;
-  font-weight: bolder;
-  font-size: 1.6rem;
-}
-
-.contact-details > i{
-  color: white;
-}
-
-#contact-details {
-  width: 0 auto;
-  margin-top: 2%;
-  margin-left: 2%;
-  display: flex;
-  gap: 15px;
-  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(31, 43, 29));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #fff;
-
-}
-
-#contact-details > h2{
-  font-weight: bolder;
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-#contact-details > i{
-  color: white;
-}
-
-.second-header{
-  margin-top: 1%;
-  margin-left: 25%;
-  display: grid;
+  display: inline-block;
+  padding: 10px 20px;
   text-align: center;
-  width: 50%;
-  color: black;
-  font-weight: bolder;
-}
-
-
-.projects{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5em;
-  margin-top: 4%;
-}
-
-.project{
-  width: 380px;
-  background-color: rgba(4, 3, 12, 0.384);
-  color: white;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.308);
-  overflow-wrap: break-word;
-}
-
-.project > h2{
-  margin: 5%;
-  background-color: #0B2129;
-}
-
-.project > p{
-  margin-top: 5%;
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-
-.project > p > strong{
-  color: rgb(35, 107, 13);
-}
-
-.project > img{
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
-}
-
-.project > a{
-  display: grid;
-  margin-top: 6%;
-  color: white;
-  text-align: center;
-}
-
-a:link{
   text-decoration: none;
-  background-color: #0B2129;
-  font-weight: bolder;
-  font-size: 1.5rem;
 }
-.project > a:hover{
-  display: grid;
-  margin-top: 6%;
-  color: purple;
-  text-align: center;
-}
-footer{
-  border: 2px solid #3E3E3E;
-  background-color: #3E3E3E;
-  height: 100px;
-  text-align: center;
-  padding: 50px;
-  color: white;
-  margin-top: 10%;
-}
-.footer > i{
-  background-color: transparent;
-  color: black;
+#myForm {
+  width: 80%;
+  margin: 0 auto;
 }
 
-#messageSubmit{
-  background-color: white;
-  border-radius: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  height: 25em;
-}
-#messageSubmit > h1 {
-color: #0B2446;
-font-size: 2.1rem;
+#myForm label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-#messageSubmit > form{
-  background-color: rgb(8, 6, 27);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-#messageSubmit > form > label{
-  font-size: 1.5rem;
-  font-weight: bolder;
-  color: white;
-}
-
-#messageSubmit > form > input{
+#myForm input[type="text"],
+#myForm input[type="email"],
+#myForm textarea {
+  display: block;
   width: 100%;
-  height: 40px;
-  margin: 1%;
-  border-radius: 5em;
-  border: 3px solid #0B2129 ;
-  display: flex;
-  text-align: center;
-  font-weight: bolder;
-  font-size: 1.3rem;
-}
-#messageSubmit > form > textarea{
-  width: 95%;
-  font-weight: bolder;
-  font-size: 1.4rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-#messageSubmit > form > button{
-  background-color: #0B2129;
-  color: white;
-  font-weight: bolder;
-  font-size: 1.4rem;
-  width: 100%;
-  margin-top: 2%;
+#myForm input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-#messageSubmit > form > button:hover{
-  background-color: aquamarine;
+#myForm input[type="submit"]:hover {
+  background-color: #0069d9;
 }
 
-@media only screen and (min-width:50px) and (max-width:480px) {
 
-  .selfDiscription{
-  width: 100%;
-  position: relative;
-  height: auto;
-  transition-duration: 3s;
-  margin-top: 5%;
-  margin-left: 0%;
-  border-bottom: double;
+@media (max-width: 768px) {
+  main {
+    margin: 20px;
   }
 
-  .selfDiscription > p{
-    font-weight: bolder;
-  }
-  .selfDiscription > p >strong{
-    color: rgb(35, 107, 13);
+  .projects {
+    flex-direction: column;
   }
 
-  .selfDiscription > p > img {
-    float: left;
-    max-width: 40%;
-    height: auto;
-    margin: 0px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
-    margin: 2%;
-  }
-   #secondP{
-     position: relative;
-     margin-top: 7%;
-   }
-
-  .contact-details{
+  .project {
+    margin-bottom: 40px;
     width: 100%;
-    margin-top: 2%;
-    margin-left: 2%;
-    display: grid;
-    color: #fff;
-    justify-content: space-between;
-  }
-
-  .contact-details > h2{
-    font-weight: bolder;
-    font-size: 1.6rem;
-  }
-
-  .contact-details > i{
-    color: white;
-  }
-
-  #contact-details{
-    width: 100%;
-    margin-top: 2%;
-    margin-left: 2%;
-    display: grid;
-    justify-content: space-between;
-  }
-
-  #contact-details > h2{
-    font-weight: bolder;
-    font-size: 1.1rem;
-  }
-
-  #contact-details > i{
-    color: white;
-  }
-
-  .second-header{
-    margin-top: 8%;
-    display: grid;
-    text-align: center;
-    width: 50%;
-    color: black;
-    font-family: sans-serif;
-    font-weight: bolder;
-  }
-
-  .projects{
-    display: flex;
-    gap: 5em;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5%;
-  }
-
-  .project{
-    width: 100%;
-    color: white;
-  }
-
-
-
-  a:link{
-    text-decoration: none;
-    background-color: #0B2129;
-    font-weight: bolder;
-    font-size: 1.5rem;
-  }
-  .project > a:hover{
-    display: grid;
-    margin-top: 6%;
-    color: purple;
-    text-align: center;
-  }
-  footer{
-    border: 2px solid #3E3E3E;
-    background-color: #3E3E3E;
-    height: auto;
-    text-align: center;
-    padding: 50px;
-    color: white;
-    margin-top: 10%;
-  }
-  .footer > i{
-    background-color: transparent;
-    color: black;
-  }
-  #messageSubmit{
-    background-color: white;
-    border-radius: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    height: 25em;
-    width: 400px;
-  }
-
-}
-
-@media only screen and (min-width:481px) and (max-width:1118px) {
-
-
-
-
-  .selfDiscription{
-  width: 100%;
-  position: relative;
-  height: auto;
-  transition-duration: 3s;
-  margin-top: 5%;
-  margin-left: 0%;
-  border-bottom: double;
-  }
-
-  .selfDiscription > p{
-    font-weight: bolder;
-    font-size: 1.6rem;
-  }
-
-  .selfDiscription > p > img {
-    float: left;
-    max-width: 40%;
-    height: auto;
-    margin: 0px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
-    margin: 2%;
-  }
-   #secondP{
-     position: relative;
-     margin-top: 7%;
-   }
-
-  
-
-  .contact-details{
-    width: 100%;
-    margin-top: 2%;
-    margin-left: 2%;
-    display: grid;
-    justify-content: space-between;
-  }
-
-  #contact-details{
-    width: 100%;
-    margin-top: 2%;
-    margin-left: 2%;
-    display: grid;
-    justify-content: space-between;
-  }
-  #contact-details > h2{
-    color: black;
-    font-weight: bolder;
-    font-size: 1.2rem;
-  }
-
-  #contact-details > i{
-    color: white;
-  }
-
-
-  .second-header{
-    margin-top: 10%;
-    margin-left: 0%;
-    display: grid;
-    text-align: center;
-    width: 100%;
-    color: black;
-    font-weight: bolder;
-  }
-  .projects{
-    display: flex;
-    gap: 10em;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5%;
-  }
-
-  .project{
-    width: 380px;
-    color: white;
-    width: 100%;
-  }
-
-  .project > h2{
-    margin: 5%;
-    background-color: #0B2129;
-  }
-
-  .project > p{
-    margin-top: 5%;
-    font-weight: bolder;
-  }
-
-  .project > img{
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0,0,0,0.22);
-  }
-
-  .project > a{
-    display: grid;
-    margin-top: 6%;
-    color: white;
-    text-align: center;
-  }
-
-  a:link{
-    text-decoration: none;
-    background-color: #0B2129;
-    font-weight: bolder;
-    font-size: 1.5rem;
-  }
-  .project > a:hover{
-    display: grid;
-    margin-top: 6%;
-    color: purple;
-    text-align: center;
-  }
-  footer{
-    border: 2px solid #3E3E3E;
-    background-color: #3E3E3E;
-    height: 100px;
-    text-align: center;
-    padding: 50px;
-    color: white;
-    margin-top: 10%;
-  }
-  .footer > i{
-    background-color: transparent;
-    color: black;
   }
 }
-
