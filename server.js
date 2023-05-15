@@ -6,7 +6,7 @@ const bodyParser= require('body-parser');
 const mongoose= require('mongoose');
 const cors= require('cors');
 require('dotenv').config();
-const url= process.env.DATABASE_URL;
+const url='mongodb+srv://Sizwenkala:sizwe123@cluster0.fejtt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 
 
