@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin dashboard</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V9QYPB859W"></script>
+</head>
+<body>
+    <header>
+        <h1>admin</h1>
+    </header>
+    <main>
+        <h1>create a new blog post</h1>
+        <form action="/newBlog" method="post" onsubmit="addDate()">
+            <input type="radio" name="catergory" id="catergory1" value="Finance"  required="true">
+            <label for="catergory1">Finance</label>
+            <input type="radio" name="catergory" id="catergory2"  value="Tech"  required="true"> 
+            <label for="catergory2">Tech</label>           
+
+            <label for="tittle">Title</label>
+            <input type="text" id="title" name="tittle" placeholder="blog title..." required="true">
+
+            <label for="tittle">source link of the image</label>
+            <input type="text" id="title" name="imageSrc" placeholder="image source..." required="true">
+
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" required="true">
+
+            <label for="contentImage">content image</label>
+            <input type="file"  accept="image/*" id="addImage">
+            <input type="text" id="contentImage" name="contentImageUrl" readonly="true"placeholder="add image to generate url..." required="true">
+
+            <label for="firstparagraph">Introduction</label>
+            <textarea name="firstParagraph" id="firstparagraph" cols="30" rows="10" required="true"></textarea>
+
+            <label for="other">other paragraphs( use html tags to add content)</label>
+            <textarea name="other" id="other" cols="30" rows="10"></textarea>
+            <input type="text" name="date" id="date" readonly="true" required="true">
+
+            <button type="submit">create</button>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./javascript/admin.js"></script>
+</body>
+</html>

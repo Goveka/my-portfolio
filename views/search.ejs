@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= searchedBlog %></title>
+    <meta name="description" content="Stay updated with the latest tech and finance information. Explore our blog posts on various topics.">
+    <meta name="keywords" content="tech, finance, guide, blog, articles">
+    <meta name="author" content="sizwe nkala">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="/info.png">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7226418403929317"
+     crossorigin="anonymous"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9QYPB859W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-V9QYPB859W');
+    </script>
+
+    <!-- Additional Google Analytics for domain name -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VH93864DQ1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VH93864DQ1');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Techfinace</h1>
+        <img src="/info.png" alt="logo">
+        <h4>Equip yourself with the right knowledge</h4>
+        <div><input type="search"  id="searchInput" placeholder="search for blogs..."><button id="searchBtn">search</button></div>
+    </header>
+    <main>
+        <div id="blogPosts">
+            <% searchedBlogs.forEach((post) => { %>
+                <div class="blogPost">
+                    <img src="<%= post.contentImageUrl %>" alt="content">
+                    <h2><%= post.tittle %></h2>
+                    <a href="/article/<%= post._id %>/<%= encodeURIComponent(post.tittle) %>">Read article here</a>
+                </div>
+            <% }) %>
+        </div>
+    </main>
+    <footer>
+        <h2 class="footer">© 2023 - Present | Techfinace | Developed by Sizwe | Email: sizwenkala80@gmail.com</h2>
+    </footer>
+    <script src="/javascript/home.js"></script>
+</body>
+</html>

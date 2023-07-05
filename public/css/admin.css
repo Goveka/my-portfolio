@@ -1,0 +1,114 @@
+/* Base styles for mobile devices */
+
+/* Apply a box-sizing border-box to all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a default font size */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+  
+  /* Header styles */
+  header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  /* Main styles */
+  main {
+    padding: 20px;
+  }
+
+  h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  
+  /* Form styles */
+  form {
+max-width: 600px;
+margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  
+  form input[type="text"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  form input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  form button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Media queries for larger screen sizes */
+  
+  @media  (max-width: 767px) {
+  header h1{
+    font-size: 20px;
+  }
+
+  main{
+    padding: 10px;
+  }
+
+  form{
+    max-width: 400px;
+  }
+  }
+
+  @media (min-width:768) and (max-width:1023px){
+    header h1{
+        font-size: 28px;
+    }
+
+    main{
+        padding: 15px;
+    }
+    form{
+        max-width: 500px;
+    }
+  }
+  

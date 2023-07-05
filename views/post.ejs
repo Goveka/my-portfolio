@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%- post.firstParagraph %>">
+    <meta name="keywords" content="<%= post.tittle%>">
+    <title><%= post.tittle%></title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="icon" href="/info.png">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7226418403929317"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V9QYPB859W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V9QYPB859W');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VH93864DQ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VH93864DQ1');
+</script>
+
+
+</head>
+<body>
+    <header>
+      <a href="/" id="home">Home <i class="fas fa-home fa-2x"></i> </a>
+      <h1><%=post.tittle %></h1>
+    </header>
+    <main>
+        <div>
+            <address>Author: <%= post.author %></address>
+            <time>Date: <%= post.date %></time>
+            <img src="<%= post.contentImageUrl %>" alt="<%=post.tittle %>" id="contentImage">
+            <h6>The image is from <a href="<%=post.imageSrc %>">Here</a></h6>
+            <p><%- post.firstParagraph %></p>
+            <p><%-post.secondParagraph %></p>
+            <p> <%-post.thirdParagraph%></p>
+            <p> <%-post.fourthParagraph%></p>
+            <p> <%-post.fiveParagraph%></p>
+            <p> <%-post.sixParagraph%></p>  
+            <p> <%-post.sevenParagraph%></p> 
+            <p> <%-post.eigthParagraph%></p> 
+            <p> <%-post.nineParagraph%></p>
+            <%-post.other %>
+            <h6>THANK YOU FOR READING</h6>
+        </div>
+
+        <div id="buttons">
+          <h5>Share article</h5>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=techfinace.com/article/<%= post._id %>/<%= encodeURIComponent(post.tittle) %>"><i class="fab fa-facebook fa-3x"></i><p>Facebook</p></a>
+          <a href="https://www.linkedin.com/shareArticle?url=techfinace.com/article/<%= post._id %>/<%= encodeURIComponent(post.tittle) %>&title=<%= post.tittle %>"><i class="fab fa-linkedin fa-3x"></i>LinkedIn</a>
+          <a href="https://twitter.com/share?url=techfinace.com/article/<%= post._id %>/<%= encodeURIComponent(post.tittle) %>"><i class="fab fa-twitter fa-3x"></i>Twitter</a> 
+        </div>
+
+        <h1>Recommended articles</h1>  
+            <div  id="slider" class="swiperwrapper">
+                <% removeCurrentPostFrmRecommended.forEach((posts)=>{%>
+                    <div class="slide">
+                        <h3><%=posts.tittle %></h3>
+                        <img src="<%= posts.contentImageUrl %>" alt="Recommended posts">
+                        <p><%= posts.firstParagraph %></p>
+                        <a href="/article/<%= posts._id %>/<%= posts.tittle%>">Read article here</a>
+                    </div>
+                    <%})%>
+                     <i  id="prevBtn" class="fas fa-angle-left fa-6x"></i>
+                     <i id="nextBtn" class="fas fa-angle-right fa-6x"></i>
+            </div>
+
+    </main>
+    <h2 class="footer">© 2023 - present | TechFinace | Developed by Sizwe | Email: sizwenkala80@gmail.com</h2>
+
+      <script src="/javascript/post.js"></script>
+
+</body>
+</html>

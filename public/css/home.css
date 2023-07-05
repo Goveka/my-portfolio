@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000c7;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.308);
+}
+
+header img {
+    border-radius: 15%;
+    width: 8%;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+header h4{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+span{
+    background-color: #fff;
+}
+
+#searchInput{
+    width: 190px;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+}
+
+#searchBtn{
+    width: 50px;
+    height: 30px;
+    font-weight: bolder;
+    background-color: #0412d8;
+    border: none;
+    color: #fff;
+}
+
+#searchBtn:hover{
+    background-color: #04aed8;
+}
+
+main{
+    padding: 20px;
+}
+#description{
+    margin-bottom: 20px;
+}
+
+#description h3{
+    font-size: 20px;
+}
+
+#description h5{
+    font-size: 14px;
+}
+
+#blogPosts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blogPost{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.blogPost img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.blogPost h2{
+    font-size:18px;
+    margin-bottom: 10px;
+}
+
+.blogPost a {
+    display: inline-block;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+
+.blogPost a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #161616;
+    padding: 10px;
+    color: #808fe2;
+    text-align: center;
+}
+
+.footer{
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+
+    header{
+        text-align: center;
+        display: block;
+    }
+    header img{
+        width: 27%;
+    }
+    header h1{
+        font-size: 27px;
+    }
+
+    header h4{
+        font-size: 20px;
+    }
+
+    main{
+        padding: 10px;
+        flex: 1;
+    }
+
+    #blogPosts{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    header{
+        display: flex;
+        text-align: center;
+        display: block;
+    }
+    header img{
+        width: 20%;
+    }
+
+    header h1{
+        font-size: 28px;
+    }
+    header h4{
+        font-size: 18px;
+    }
+    main{
+        padding: 15px;
+        flex: 1;
+    }
+}
